@@ -1,3 +1,23 @@
 /*
  * Base Style
 */
+
+html
+  font-size 62.5% // 10px 相当にするため
+
+body
+  color color-text
+  font-size 1.2rem // html font-size * 1.2
+  font-family 'Hiragino Kaku Gothic ProN', Meiriyo, sans-serif
+
+*,
+*::before,
+*::after
+  box-sizing border-box // width height の数値を単純にするため
+
+a
+  &:link,
+  &:visited,
+  &:hover,
+  &:active
+    color color-link
