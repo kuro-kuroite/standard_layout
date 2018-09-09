@@ -16,3 +16,33 @@
     display block
     height 100%
     width 100%
+
+.global-nav
+  margin-top 15px
+  margin 0 auto
+
+  & .nav-item
+    margin 0 10px
+
+    &.active a
+      background-color color-link
+      color color-text-outlined
+
+    & a
+      border-radius 8px
+      color #666
+      display block
+      font-size 1.3rem
+      height 30px // 文字と外枠との間の、縦方向の中央寄せのため
+      letter-spacing 1px
+      line-height 30px // 文字と外枠との間の、縦方向の中央寄せのため TODO: 別の方法を模索
+      text-align center // 文字と外枠との間の、横方向の中央寄せのため
+      transition hover-animation-duration
+      width 100px
+
+      &:hover
+        @extend .global-nav .nav-item.active a
+
+.global-nav-container
+    display flex
+    justify-content center
