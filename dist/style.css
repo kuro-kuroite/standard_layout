@@ -147,6 +147,11 @@ input,
 select {
   vertical-align: middle;
 }
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
 .c-holy-grail-layout {
   display: grid;
   grid-template-columns: auto minmax(auto, 660px) minmax(auto, 275px) auto;
