@@ -171,6 +171,25 @@ a:active {
   content: '';
   display: block;
 }
+.header {
+  background: url("images/bg-header.gif") repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
+  padding: 28px 0 10px;
+}
+.logo {
+  background: url("images/logo.png") no-repeat;
+  height: 56px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-indent: 100%;
+  width: 225px;
+  white-space: nowrap;
+}
+.logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 .c-holy-grail-layout {
   display: grid;
   grid-template-columns: auto minmax(auto, 660px) minmax(auto, 275px) auto;
@@ -181,6 +200,7 @@ a:active {
   grid-column: 1/5;
   grid-row: 1/2;
   margin: auto auto 30px;
+  width: 100%;
 }
 .c-holy-grail-layout .main {
   grid-column: 2/3;
@@ -195,4 +215,5 @@ a:active {
   grid-column: 1/5;
   grid-row: 3/4;
   margin: 40px auto auto;
+  width: 100%;
 }
