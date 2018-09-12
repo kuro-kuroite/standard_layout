@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev:watch": "yarn stylus",
+    "stylus:compile": "stylus src/stylus/style.styl -o dist/style.css",
+    "stylus:watch": "stylus -w src/stylus/style.styl -o dist/style.css",
+    "stylus": "yarn stylus:watch"
+  },
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}

@@ -1,0 +1,89 @@
+/*
+ * Propaties which depends on product and cascade from setting
+ * layers of color, branding and media
+ * variables of textsize, space, aimation, feedback, z-index and anything else
+*/
+
+// color layer
+// 色 = 色相名とカラーコードの紐づけ
+color-white = #f4f5f7
+color-black = #333
+color-gray = #8c8c8c
+color-gray-dk = #1a1a1a // dk means dark
+color-gray-lt = #ddd // lt means light
+color-gray-p = #f6f6f6 // p means pale
+color-green = #51c300
+color-red = #f0163a
+color-red-p = #d03c56
+
+// branding layer
+// 色 = サービス全体で統一する色の意味
+color-base = color-white
+color-link = color-red-p
+color-link-active = color-link
+color-link-hover = color-link
+color-link-visited = color-link
+color-success = none
+color-danger = none
+color-warning = color-red
+color-info = color-gray
+color-primary = color-green
+color-secondary = none
+color-accent = none
+color-selected = color-gray-p
+
+// media layer
+// 色 = 媒体固有で使用する色
+color-text = color-black
+color-text-outlined = color-white
+color-tip = color-gray-dk
+color-line = color-gray-lt
+color-info-layer1 = color-gray-p
+color-info-layer2 = color-white
+color-header = color-black
+color-card = color-white
+color-card-header = color-black
+
+// 文字 = サイズ
+font-size-xxs = none
+font-size-xs = .6rem
+font-size-s = .8rem
+font-size-m = 1rem
+font-size-l = 1.2rem
+font-size-xl = 1.4rem
+font-size-xxl = 1.6rem
+font-size-xxxl = 1.8rem
+font-size-xxxxl = 2rem
+
+// 文字 = 太さ
+font-weight-default = 400
+font-weight-bold = 700
+
+// 余白
+space = .5rem
+
+// 枠
+line-width = 1px
+line-style = solid
+radius = 2px
+border = line-width line-style color-line
+
+// フィードバック
+hover-feedback-opacity = .7
+
+// アニメーション
+hover-animation-duration = .1s
+hover-animation-timing = ease-out
+hover-animation = hover-animation-duration hover-animation-timing
+fade-animation-duration = .2s
+fade-animation-timing = linear
+fade-animation = fade-animation-duration fade-animation-timing
+
+// z座標
+z-header = 10
+
+// レスポンシブル デザイン
+// @custom-media breakpoint-s (min-width = 768px)
+
+// HACK
+src_relative_path = '../../../../'

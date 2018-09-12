@@ -1,0 +1,66 @@
+.ranking
+  list-style-type none
+  margin-bottom 30px
+  counter-reset ranking
+
+  & .ranking-item
+    margin-top 15px
+
+    &:nth-of-type(1) .order,
+    &:nth-of-type(2) .order,
+    &:nth-of-type(3) .order
+      border none
+      color color-text-outlined
+      font-weight normal
+      line-height 18px
+
+    &:nth-of-type(1) .order
+      background-color #dab413
+
+    &:nth-of-type(2) .order
+      background-color #6e7b84
+
+    &:nth-of-type(3) .order
+      background-color #a0541a
+
+
+
+    & a
+      display block
+      font-size 0
+      transition opacity 0.15s
+
+      &:hover
+        opacity 0.8
+
+  & .image
+    height 55px
+    width 55px
+
+  & .text
+    color #000
+    display inline-block
+    font-size 1.2rem
+    line-height 1.5
+    vertical-align top
+    width 180px
+
+  & .order
+    border 1px solid #ccc
+    color #aaa
+    display inline-block
+    font-weight bold
+    height 18px
+    line-height 16px
+    margin 0 10px
+    text-align center
+    transform rotate(45deg)
+    vertical-align 20px
+    width 18px
+
+    &::before
+      content counter(ranking)
+      counter-increment ranking
+      display inline-block
+      font-size 1.0rem
+      transform rotate(-45deg)

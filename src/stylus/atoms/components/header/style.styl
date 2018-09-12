@@ -1,0 +1,48 @@
+.header
+  background url('images/bg-header.gif') repeat-x
+  box-shadow 0 0 10px 1px #e3e3e3
+  padding 28px 0 10px
+
+.logo
+  background url('images/logo.png') no-repeat
+  height 56px
+  margin 0 auto // 中央寄せ
+  overflow hidden // 隠し文字にするため
+  text-indent 100% // 隠し文字にするため
+  width 225px
+  white-space nowrap // 隠し文字にするため
+
+  & a
+    display block
+    height 100%
+    width 100%
+
+.global-nav
+  margin-top 15px
+  margin 0 auto
+
+  & .nav-item
+    margin 0 10px
+
+    &.active a
+      background-color color-link
+      color color-text-outlined
+
+    & a
+      border-radius 8px
+      color #666
+      display block
+      font-size 1.3rem
+      height 30px // 文字と外枠との間の、縦方向の中央寄せのため
+      letter-spacing 1px
+      line-height 30px // 文字と外枠との間の、縦方向の中央寄せのため TODO: 別の方法を模索
+      text-align center // 文字と外枠との間の、横方向の中央寄せのため
+      transition hover-animation-duration
+      width 100px
+
+      &:hover
+        @extend .global-nav .nav-item.active a
+
+.global-nav-container
+    display flex
+    justify-content center

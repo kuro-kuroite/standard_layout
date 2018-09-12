@@ -1,0 +1,50 @@
+.article-box-container
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+
+.article-box
+  box-shadow 6px 6px 8px -4px rgba(0, 0, 0, 0.15)
+  display block
+  height 360px
+  margin-bottom 30px
+  padding 210px 15px 0
+  position relative
+  transition opacity 0.15s
+  width 310px
+
+  &:hover
+    opacity 0.8
+
+  & .title
+    color #555
+    font-size 1.40rem
+    line-height 1.6
+    margin-top 30px
+
+  & .desc
+    color color-text
+    margin-top 5px
+    overflow hidden
+    text-overflow ellipsis
+    white-space nowrap
+
+  & .date
+    background-color #b5d264
+    bottom 15px
+    color #2d3d54
+    display block
+    font-size 1.1rem
+    font-weight bold
+    letter-spacing 1px
+    padding 4px
+    position absolute
+    right 0
+    text-align center
+    width 160px
+
+  & .image
+    left 0
+    position absolute
+    top 0
+    width 100%
