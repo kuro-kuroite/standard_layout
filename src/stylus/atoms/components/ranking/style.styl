@@ -5,6 +5,7 @@
 
   & .ranking-item
     margin-top 15px
+    position relative
 
     &:nth-of-type(1) .order,
     &:nth-of-type(2) .order,
@@ -35,6 +36,7 @@
 
   & .image
     height 55px
+    margin-right 20px
     width 55px
 
   & .text
@@ -43,24 +45,27 @@
     font-size 1.2rem
     line-height 1.5
     vertical-align top
-    width 180px
+    width 190px
 
   & .order
+    background-color #fff
     border 1px solid #ccc
+    border-radius 50%
     color #aaa
     display inline-block
     font-weight bold
-    height 18px
+    height 20px
+    left 55px - 20px
     line-height 16px
     margin 0 10px
+    position absolute
     text-align center
-    transform rotate(45deg)
+    top 0 - (20px / 2)
     vertical-align 20px
-    width 18px
+    width 20px
 
     &::before
       content counter(ranking)
       counter-increment ranking
       display inline-block
       font-size 1.0rem
-      transform rotate(-45deg)
