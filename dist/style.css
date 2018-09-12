@@ -255,6 +255,40 @@ a:active {
   padding-left: 10px;
   background: url("./images/arrow.gif") no-repeat left center;
 }
+.footer {
+  background-color: #2d3d54;
+  color: #f4f5f7;
+  padding: 20px 0 30px;
+  width: 100%;
+}
+.horizontal-list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+  list-style-type: none;
+  width: 970px;
+}
+.horizontal-list .horizontal-item {
+  letter-spacing: 1px;
+  padding: 0 15px;
+}
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid #bbb;
+}
+.horizontal-list .horizontal-item a {
+  border-bottom: 1px dashed #777;
+  color: #bbb;
+  font-size: 1.1rem;
+  transision: color 0.15s;
+}
+.horizontal-list .horizontal-item a:hover {
+  color: #ddd;
+}
+.copyright {
+  letter-spacing: 1px;
+  margin-top: 30px;
+  text-align: center;
+}
 .header {
   background: url("images/bg-header.gif") repeat-x;
   box-shadow: 0 0 10px 1px #e3e3e3;

@@ -1,0 +1,34 @@
+.footer
+  background-color #2d3d54
+  color color-text-outlined
+  padding 20px 0 30px
+  width 100%
+
+.horizontal-list
+  display flex
+  margin 0 auto
+  justify-content flex-end
+  list-style-type none
+  width 970px
+
+
+  & .horizontal-item
+    letter-spacing 1px
+    padding 0 15px
+
+    & + .horizontal-item
+      border-left 1px solid #bbb
+
+    & a
+      border-bottom 1px dashed #777
+      color #bbb
+      font-size 1.1rem
+      transision color 0.15s
+
+      &:hover
+        color #ddd
+
+.copyright
+  letter-spacing 1px
+  margin-top 30px
+  text-align center
